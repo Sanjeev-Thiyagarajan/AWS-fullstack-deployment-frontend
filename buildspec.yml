@@ -11,4 +11,4 @@ phases:
   build:
     commands:
       - echo Running tests
-      - npm run test
+      - npm run test:nowatch
