@@ -4,7 +4,7 @@ phases:
   install:
     runtime-versions:
       nodejs: 14
-  prebuild:
+  pre_build:
     commands:
       - echo pulling git repo
       - git status
