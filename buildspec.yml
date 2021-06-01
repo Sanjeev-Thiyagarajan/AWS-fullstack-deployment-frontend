@@ -4,3 +4,8 @@ phases:
   install:
     runtime-versions:
       nodejs: 14
+  prebuild:
+    commands:
+      - echo pulling git repo
+      - git status
+      - npm --version
