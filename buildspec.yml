@@ -7,5 +7,5 @@ phases:
   pre_build:
     commands:
       - echo pulling git repo
-      - git status
+      - ls -la
       - npm --version
