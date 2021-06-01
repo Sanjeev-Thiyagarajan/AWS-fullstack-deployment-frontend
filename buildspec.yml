@@ -6,6 +6,9 @@ phases:
       nodejs: 14
   pre_build:
     commands:
-      - echo pulling git repo
-      - ls -la
-      - npm --version
+      - echo Installing node modules
+      - npm install
+  build:
+    commands:
+      - echo Running tests
+      - npm run test
