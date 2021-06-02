@@ -11,7 +11,7 @@ phases:
   pre_build:
     commands:
       - aws --help
-      - echo Installing node modules 2
+      - echo Installing node modules 23d
       # - echo parameter value is $REACT_URL
       # - echo "parameter value is $REACT_URL"
       - npm install
