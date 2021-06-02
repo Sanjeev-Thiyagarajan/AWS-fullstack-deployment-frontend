@@ -1,7 +1,9 @@
 version: 0.2
-# env:
-#   parameter-store:
-#     # REACT_APP_API_URL: "react-api-url"
+env:
+  #   parameter-store:
+  #     # REACT_APP_API_URL: "react-api-url"
+  secrets-manager:
+    REACT_APP_API_URL: yelp-api-key:react-api-url
 phases:
   install:
     runtime-versions:
