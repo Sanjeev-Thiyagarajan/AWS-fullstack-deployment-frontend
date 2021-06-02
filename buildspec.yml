@@ -1,7 +1,7 @@
 version: 0.2
 env:
-  parameter-store:
-    REACT_APP_API_URL2: "react-api-url"
+  # parameter-store:
+  #   REACT_APP_API_URL2: "react-api-url"
   secrets-manager:
     REACT_APP_API_URL: "yelp-api-key:react-api-url"
 phases:
@@ -12,7 +12,7 @@ phases:
     commands:
       - aws --help
       - echo Installing node modules 23d
-      - printenv
+
       # - echo parameter value is $REACT_URL
       # - echo "parameter value is $REACT_URL"
       - npm install
