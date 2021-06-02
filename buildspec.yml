@@ -1,13 +1,14 @@
 version: 0.2
 env:
   parameter-store:
-    REACT_URL: "react-api-url"
+    REACT_APP_API_URL: "react-api-url"
 phases:
   install:
     runtime-versions:
       nodejs: 14
   pre_build:
     commands:
+      - aws --help
       - echo Installing node modules 2
       - echo parameter value is $REACT_URL
       - echo "parameter value is $REACT_URL"
