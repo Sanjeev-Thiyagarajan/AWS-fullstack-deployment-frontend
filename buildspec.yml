@@ -1,7 +1,7 @@
 version: 0.2
 env:
   parameter-store:
-    REACT_APP_API_URL: "react-api-url"
+    # REACT_APP_API_URL: "react-api-url"
 phases:
   install:
     runtime-versions:
