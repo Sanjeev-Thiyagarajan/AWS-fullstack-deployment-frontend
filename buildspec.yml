@@ -8,7 +8,7 @@ phases:
       nodejs: 14
   pre_build:
     commands:
-      - echo Installing node modules
+      - echo Installing node modules 2
       - echo parameter value is $REACT_URL
       - echo "parameter value is $REACT_URL"
       - npm install
