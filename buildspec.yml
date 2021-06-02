@@ -1,5 +1,7 @@
 version: 0.2
 env:
+  # variables:
+  #   REACT_APP_API_URL: "https://api.sanjeev.xyz/api/v1/restaurants"
   # parameter-store:
   #   REACT_APP_API_URL2: "react-api-url"
   secrets-manager:
@@ -25,3 +27,9 @@ phases:
     commands:
       - aws s3 sync --delete build/ s3://fullstack-deployment
       - aws cloudfront create-invalidation --distribution-id E25K0YFJQZ08KS --paths /*
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: "build/"
+  discard-paths: yes
