@@ -32,4 +32,5 @@ artifacts:
   files:
     - "**/*"
   base-directory: "build/"
-  discard-paths: yes
+
+  name: myname-$(date +%Y-%m-%d)
