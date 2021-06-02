@@ -20,7 +20,7 @@ phases:
       - npm install
   build:
     commands:
-      - echo Running tests
+      - echo Running testsfs
       - npm run test:nowatch
       - npm run build
   post_build:
