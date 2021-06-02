@@ -21,3 +21,4 @@ phases:
   post_build:
     commands:
       - aws s3 sync --delete build/ s3://fullstack-deployment
+      - aws cloudfront create-invalidation --distribution-id E25K0YFJQZ08KS --paths /*
