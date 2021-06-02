@@ -17,3 +17,6 @@ phases:
       - echo Running tests
       - npm run test:nowatch
       - npm run build
+  post_build:
+    commands:
+      - aws s3 sync --delete build/ s3://fullstack-deployment
