@@ -1,5 +1,7 @@
 version: 0.2
-
+env:
+  parameter-store:
+    REACT_URL: "react-api-url"
 phases:
   install:
     runtime-versions:
@@ -7,8 +9,11 @@ phases:
   pre_build:
     commands:
       - echo Installing node modules
+      - echo parameter value is $REACT_URL
+      - echo "parameter value is $REACT_URL"
       - npm install
   build:
     commands:
       - echo Running tests
       - npm run test:nowatch
+      - npm run build
