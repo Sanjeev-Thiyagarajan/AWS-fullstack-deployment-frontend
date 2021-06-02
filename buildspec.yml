@@ -15,7 +15,7 @@ phases:
       - npm install
   build:
     commands:
-      - echo Running tests yeah
+      - echo Running tests
       - npm run test:nowatch
       - npm run build
   post_build:
