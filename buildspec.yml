@@ -12,6 +12,7 @@ phases:
     commands:
       - aws --help
       - echo Installing node modules 23d
+      - printenv
       # - echo parameter value is $REACT_URL
       # - echo "parameter value is $REACT_URL"
       - npm install
